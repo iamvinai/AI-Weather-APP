@@ -1,0 +1,14 @@
+.gradient-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: transparent; /* Text color is transparent to show gradient */
+    background: linear-gradient(to right, #00aaff, #0044cc); /* Blue gradient */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* For other modern browsers */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+
+
+
