@@ -23,8 +23,8 @@ public class WeatherService {
     private String cityName;
     private String unit;
 
-    public WeatherService(ChatClient.Builder builder) {
-        this.chatClient = builder.build();
+    public WeatherService(ChatClient chatClient) {
+        this.chatClient = chatClient;
     }
 
     public String generate(String message) {

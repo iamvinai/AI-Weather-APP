@@ -35,11 +35,9 @@ class WeatherappApplicationTests {
 
         // Create a mock ChatClient
         chatClient = mock(ChatClient.class);
-        ChatClient.Builder builder = mock(ChatClient.Builder.class);
-        when(builder.build()).thenReturn(chatClient);
 
         // Create the WeatherService instance
-        weatherService = new WeatherService(builder);
+        weatherService = new WeatherService(chatClient);
         weatherService.setCityName("London");
         weatherService.setUnit("metric");
 
